@@ -11,6 +11,31 @@ public class ArrayList<Item> {
 		storage = new Object[10];
 	}
 	
+	public int size()
+	{
+		return currentSize;
+	}
+
+	public Object remove(int index){
+		if(index < currentSize)
+        {
+        	Object obj = storage[index];
+        storage[index] = null;
+        int tmp = index;
+        while(tmp < currentSize)
+        {
+        	storage[tmp] = storage[tmp+1];
+        	storage[tmp+1] = null;
+        	tmp++;
+        }
+        currentSize--;
+        return obj; 
+        }
+		else {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+	}
+	
 	private void resize(int max)
 	{ // Move stack to a new array of size max.
 		Object[] temp = new Object[max];
@@ -28,4 +53,5 @@ public class ArrayList<Item> {
         }
         storage[currentSize] = obj;
     }
+	
 }
