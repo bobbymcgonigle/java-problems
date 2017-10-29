@@ -1,3 +1,4 @@
+//Write a program to reverse a string using recursive methods.
 
 public class StringReversalRecursive {
 
@@ -10,6 +11,7 @@ public class StringReversalRecursive {
         } 
 		else
         {
+			//return string = return string + character at length-1 + call(reverse of index 0-length-1
             reversedString += str.charAt(str.length()-1) +reverse(str.substring(0,str.length()-1));
             return reversedString;
         }
