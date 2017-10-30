@@ -9,3 +9,6 @@ Write a program to implement your own ArrayList class. It should contain add(), 
 
 # 3. String Reverse Recursive
 Write a program to reverse a string using recursive functions.
+
+# 4. Prime Numbers
+Write a program to find the sum of the first 'x' prime numbers.
