@@ -18,5 +18,6 @@ public class BinaryToDecimal {
     }
      
     public static void main(String a[]){
+        System.out.println("100110110 ===> "+getDecimalFromBinary(100110110));
     }
 }
